@@ -64,6 +64,22 @@ function genRandomSuffix(len = 8) {
   return uuidv4().split("-")[0].slice(0, len).toUpperCase();
 }
 
+app.get("/api", (req, res) => {
+  res.json({
+    message: "🚀 API backend Barokah Tour berjalan dengan baik",
+    endpoints: [
+      "/api/bookings",
+      "/api/packages",
+      "/api/users",
+      "/api/peserta",
+      "/api/marketing",
+      "/api/stats/peserta",
+      "/api/stats/marketing",
+      "/api/admin/peserta",
+      "/api/admin/marketing",
+    ],
+  });
+});
 
 // ------------------ BOOKINGS ------------------
 
