@@ -22,10 +22,10 @@ app.use(express.json());
 
 // DB pool
 const db = mysql.createPool({
-  host: process.env.DB_HOST || "localhost",
+  host: process.env.DB_HOST || "centerbeam.proxy.rlwy.net",
   user: process.env.DB_USER || "root",
-  password: process.env.DB_PASSWORD || "",
-  database: process.env.DB_NAME || "barokah_tour",
+  password: process.env.DB_PASSWORD || "xXazTEjhBcClgVyaFDTEQIIkawJgatma",
+  database: process.env.DB_NAME || "railway",
   connectionLimit: 10,
   timezone: "+07:00",
 });
